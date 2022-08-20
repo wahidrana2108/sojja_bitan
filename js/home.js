@@ -1,5 +1,10 @@
 const navbar = document.querySelector('.navbar');
 
 window.addEventListener('scroll', () =>{
-    console.log(scrollY);
+    if(scrollY >= 180){
+        navbar.classList.add('bg');
+    }
+    else{
+        navbar.classList.remove('bg');
+    }
 })

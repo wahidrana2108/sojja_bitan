@@ -21,6 +21,10 @@ body{
     transition: 0.5s;
 }
 
+.navbar.bg{
+    color: #fff;
+}
+
 .link-container{
     display: flex;
     align-items: center;
@@ -40,7 +44,12 @@ body{
     transition: 0.5s;
 }
 
-.link:hover{
+.navbar.bg .link{
+    color: #000;
+    opacity: 0.5;
+}
+
+.link.active, .link:hover, .navbar.navbar.bg .link:hover{
     color: #fff;
     opacity: 1;
 }
@@ -269,8 +278,12 @@ body{
 
 
 /* review section */
-.review-sectionP{
+.review-section{
     padding: 50px 5vw;
+}
+
+.section-title{
+    text-align: center;
 }
 
 .section-title span{
